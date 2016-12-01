@@ -1,0 +1,14 @@
+{
+  "name": "hxjs-redux",
+  "license": "MIT",
+  "tags": [
+    "redux"
+  ],
+  "classPath": "src",
+  "contributors": [
+    "kevinresol"
+  ],
+  "releasenote": "initial release",
+  "version": "0.0.0",
+  "dependencies": {}
+}
