@@ -39,7 +39,7 @@ class Reducer {
 				
 				var state = ComplexType.TAnonymous(stateFields);
 				var ct = ComplexType.TFunction([state, Context.toComplexType(action)], state);
-				return macro (redux.Redux.combineReducers($e):$ct);
+				return macro (redux.Redux._combineReducers($e):$ct);
 				
 			default:
 				Context.error('Expected object declaration', e.pos);
