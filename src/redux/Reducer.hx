@@ -27,7 +27,7 @@ class Reducer {
 								Context.toComplexType(s);
 								
 						default:
-							Context.error('Expected function', pos);
+							Context.error('Expected function with signature S->A->S', pos);
 					}
 					
 					stateFields.push({
