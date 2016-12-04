@@ -6,7 +6,7 @@ import haxe.macro.Expr;
 @:jsRequire('redux')
 extern class Redux {
 	static function createStore<S, A:{type:String}>(reducer:S->A->S, ?initialState:S, ?enhancer:Function):Store<S, A>;
-	public static macro function combineReducers(e:Expr):Expr return macro Reducer.combine($e);
+	public static macro function combineReducers(e:Expr):Expr return macro redux.Reducer.combine($e);
 	
 	@:native('combineReducers') // the real one
 	static function _combineReducers<S, A:{type:String}>(reducers:{}):S->A->S;
