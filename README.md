@@ -17,16 +17,16 @@ store.dispatch(myAction);
 // etc
 ```
 
-## Macro powered `combineReducer`
+## Macro powered `combineReducers`
 
-One notable advantage of this library is that `combineReducer` is macro powered to ensure the result is properly typed.
+One notable advantage of this library is that `combineReducers` is macro powered to ensure the result is properly typed.
 
 ```haxe
 
 var foo = function(state:Foo, action:Action):Foo return state;
 var bar = function(state:Bar, action:Action):Bar return state;
 
-var reducer = Redux.combineReducer({
+var reducer = Redux.combineReducers({
 	foo: foo,
 	bar: bar,
 });
